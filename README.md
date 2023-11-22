@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir Git installé et prêt à être utilis�
 
 ## Git Katas de base dans l'ordre suggéré
 
-1. [basic-commits](basic-commits/README.md) - Création très basique de commits.
+1. [basic-commits](basic-commits/README-fr.md) - Création très basique de commits.
 2. [basic-staging](basic-staging/README.md) - Interaction avec la zone de transit (index).
 3. [basic-branching](basic-branching/README.md) - La première incursion dans le branching.
 4. [ff-merge](ff-merge/README.md) - Un tour autour des fusions les plus triviales.
