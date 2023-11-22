@@ -4,13 +4,28 @@ Ce dépôt est un fork actif de [eficode-academy/git-katas](https://github.com/e
 
 ## Configuration
 
-![Démarrage rapide](/images/quickstart.gif)
-
 Avant de commencer, assurez-vous d'avoir Git installé et prêt à être utilisé. Si vous n'êtes pas sûr que votre environnement soit configuré et prêt, veuillez consulter [configure-git](configure-git/README.md) pour vous en assurer.
 
 - Clonez ce dépôt
+
+  ```bash
+  mkdir git-katas
+  cd git-katas
+  git clone git@github.com:Olfredos6/git-katas.git --branch master-fr .
+  ```
+
 - Accédez au dossier dans lequel vous souhaitez résoudre un exercice
+  
+  ```bash
+  cd basic-commit
+  ```
+
 - Exécutez le script `setup.sh`
+
+  ```bash
+  source setup.sh
+  ```
+
 - Consultez le fichier README-fr.md dans ce dossier pour obtenir une description de l'exercice.
 
 ## Vue d'ensemble

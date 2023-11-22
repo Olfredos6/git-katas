@@ -8,6 +8,8 @@
 
 Vous vivez à nouveau dans votre propre branche, cette fois-ci nous jonglerons un peu avec les branches, pour montrer à quel point les branches sont légères dans git.
 
+Cet exercice utilise la commande Git rebase. Vous pouvez en savoir plus à ce sujet [ici](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing).
+
 1. Quelles branches existent ?
 2. Regardez le journal pour la branche `master`.
 3. Basculez sur la branche `uppercase`.
