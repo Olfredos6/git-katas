@@ -6,7 +6,7 @@
 
 ## La tâche
 
-Vous vivez à nouveau dans votre propre branche, cette fois-ci nous ferons jongler un peu avec les branches, pour montrer à quel point les branches sont légères dans git.
+Vous vivez à nouveau dans votre propre branche, cette fois-ci nous jonglerons un peu avec les branches, pour montrer à quel point les branches sont légères dans git.
 
 1. Créez une branche (feature) appelée `feature/uppercase` (oui, `feature/uppercase` est un nom de branche parfaitement légal et une convention courante).
 2. Basculez sur cette branche.
