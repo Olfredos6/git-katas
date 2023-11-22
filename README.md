@@ -1,188 +1,59 @@
----
-maintainer: JKrag
----
-# Git Katas
+# Git-Katas(fr)
 
-## Quick Start
+Ce dépôt est un fork actif de [eficode-academy/git-katas](https://github.com/eficode-academy/git-katas). Le but de ce fork est principalement de fournir une version traduite en français de ce fabuleux travail.
 
-### In the Cloud
+## Configuration
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/praqma-training/git-katas.git)
+![Démarrage rapide](/images/quickstart.gif)
 
-### On Your Local Machine
+Avant de commencer, assurez-vous d'avoir Git installé et prêt à être utilisé. Si vous n'êtes pas sûr que votre environnement soit configuré et prêt, veuillez consulter [configure-git](configure-git/README.md) pour vous en assurer.
 
-![Quick Start](/images/quickstart.gif)
+- Clonez ce dépôt
+- Accédez au dossier dans lequel vous souhaitez résoudre un exercice
+- Exécutez le script `setup.sh`
+- Consultez le fichier README-fr.md dans ce dossier pour obtenir une description de l'exercice.
 
-- Clone this repository
-- Go into the folder you want to solve an exercise in
-- Run the `setup.sh` script
-- Consult the README.md in that folder to get a description of the exercise
+## Vue d'ensemble
 
-## Purpose of Git Katas
+"## Aperçu des exercices de Git Kata
 
-This repository is a collection of Git exercises.
-The concept is stolen without shame from [Schauderhaft.de](http://blog.schauderhaft.de/gitkata/).
-Unfortunately, they have not maintained the system - and we need more good Git exercises.
+## Git Katas de base dans l'ordre suggéré
 
-The exercises are designed for use when we are teaching Git courses. You should be able to use them as self-contained exercises that will allow you to keep your Git skills sharp.
+1. [basic-commits](basic-commits/README.md) - Création très basique de commits.
+2. [basic-staging](basic-staging/README.md) - Interaction avec la zone de transit (index).
+3. [basic-branching](basic-branching/README.md) - La première incursion dans le branching.
+4. [ff-merge](ff-merge/README.md) - Un tour autour des fusions les plus triviales.
+5. [3-way-merge](3-way-merge/README.md) - Une fusion de base impliquant plusieurs branches divergentes.
+6. [merge-conflict](merge-conflict/README.md) - Une fusion de base entre des branches divergentes avec des ensembles de changements incompatibles (mais simples).
+7. [merge-mergesort](merge-mergesort/README.md) - Un conflit de fusion avec du code réel.
+8. [rebase-branch](rebase-branch/README.md) - Utilisation du rebase comme alternative à la fusion.
+9. [basic-revert](basic-revert/README.md) - Utilisez revert pour annuler un changement.
+10. [reset](reset/README.md) - Reset est une commande puissante et légèrement dangereuse si vous ne savez pas ce que vous faites. Parcourez les trois modes de reset ici.
+11. [basic-cleaning](basic-cleaning/README.md) - Nettoyer l'espace de travail.
+12. [amend](amend/README.md) - Modifier les commits précédents.
+13. [reorder-the-history](reorder-the-history/README.md) - Nous avons peut-être créé nos commits dans un ordre suboptimal, pratiquez pour résoudre ce scénario ici.
+14. [squashing](squashing/README.md) - Beaucoup de petits commits sont bons lorsque vous travaillez localement, mais pour partager votre code, il pourrait être plus bénéfique de livrer vos changements de code en grands ensembles. Allez ici pour expérimenter cela. Rédigez un bon commit.
+15. [advanced-rebase-interactive](advanced-rebase-interactive/README.md) - Pratiquez l'utilisation des commandes de rebase interactif.
+16. [basic-stashing](basic-stashing/README.md) - La première incursion dans le stashing.
+17. [ignore](ignore/README.md) - Les bases de l'utilisation du fichier `.gitignore`. Et utilisation de `git rm`.
+18. [submodules](submodules/README.md) - Les sous-modules sont détestés par beaucoup. Parcourez cet exercice pour comprendre de quoi il s'agit.
+19. [git-tag](git-tag//README.md) - Les tags sont pratiques pour suivre les commits qui incrémentent un numéro de version. Dans cet exercice, vous listerez, ajouterez et supprimerez des tags.
 
-Exercises starting with _basic_ are entry-level - other exercises vary greatly in difficulty.
+## Katas résolvant des problèmes standards
 
-To get an overview of the exercises in here look in [Overview.md](Overview.md).
+1. [commit-on-wrong-branch](commit-on-wrong-branch/README.md) - Si nous mettons accidentellement des commits non poussés sur la mauvaise branche, comment les déplacer efficacement vers une autre branche avant notre travail sur cette branche.
+2. [commit-on-wrong-branch-2](commit-on-wrong-branch-2/README.md) - Un autre exercice sur ce qu'il faut faire si vous avez accidentellement commis sur la mauvaise branche.
+3. [reverted-merge](reverted-merge/README.md) - Nous annulons une fusion, mais après l'ajout de correctifs à la branche fusionnée, nous voulons les changements de la fusion et les nouveaux correctifs.
+4. [save-my-commit](save-my-commit/README.md) - Si vous supprimez accidentellement ou délibérément un commit, allez ici pour essayer de le sauver. Vous utiliserez le reflog.
+5. [detached-head](detached-head/README.md) - Git se plaint que vous êtes dans un état "You are in 'detached HEAD' state". Que faites-vous?
 
-Feel free to use these exercises, that's why they're public!
+## Katas sur les fonctionnalités avancées
 
-## Suggested Learning Path
-
-If you are coming to this repository for some basic Git knowledge, we recommend going through the exercises in the following order.
-This is the order that Jan Krag at Praqma teaches Git and might change over time. There are more exercises than this, but these should take you through
-everything you need to be able to use Git effectively in your day to day life.
-
-- [Basic Commits](./basic-commits/README.md)
-- [Basic Staging](./basic-staging/README.md)
-- [Investigation](./investigation/README.md)
-- [Basic Branching](./basic-branching/README.md)
-- [Fast Forward Merge](./ff-merge/README.md)
-- [3 way Merge](./3-way-merge/README.md)
-- [Merge Mergesort](./merge-mergesort/README.md)
-- [Rebase Branch](./rebase-branch/README.md)
-- [Basic Revert](./basic-revert/README.md)
-- [Reset](./reset/README.md)
-- [Basic Cleaning](./basic-cleaning/README.md)
-- [Amend](./amend/README.md)
-- [Reorder the History](./reorder-the-history/README.md)
-- [Advanced Rebase Interactive](./advanced-rebase-interactive/README.md)
-- [Rebase using autosquash](./rebase-interactive-autosquash/README.md)
-- [Basic Stashing](./basic-stashing/README.md)
-
-See [Overview.md](Overview.md) for a more complete list and suggested order.
-
-## Contributing
-
-If you miss exercises or find errors in any of them, feel free to improve them and make a pull request.
-
-You can also make an issue so we notice an opportunity to improve!
-
-Thank you!
-
-### Celebrating success
-
-On September 6th, 2023, we reached the milestone of having 1000 stars on GitHub. Thank you all for your support! This repository would not be where it is without the valuable contributions from the community.
-
-![1000 stars](/docs/1000stars-git-katas.png)
-
-## Cheatsheet
-
-A collection of useful commands to use throughout the exercises:
-
-```shell
-# Initializing an empty git repository.
-git init            # Initialize an empty git repository under current directory.
-
-# Cloning a repository
-git clone https://github.com/praqma-training/git-katas.git      # Clone this repository to your current working directory
-
-# Git (user and repo level) configurations
-git config --local user.name "Repo-level Username"          # For setting a local git repo level user name.
-git config --local user.email "Repo-level.Email@Example.com" # For setting a local git repo level user email.
-                                                            # --global -> User level git config stored in <user-home>/.gitconfig for e.g. ~/.gitconfig
-                                                            # --local -> repo level config stored in repo's main dir under .git/config
-
-
-# See local changes
-git status                  # Show the working tree status
-git diff                    # Show changes current working directory (not yet staged)
-git diff --cached           # Show changes currently staged for commit
-
-# Add files to staging (before a commit)
-git add myfile.txt          # Add myfile.txt to stage
-git add .                   # Add entire working directory to stage
-
-# Make a commit
-git commit                              # Make a new commit with the changes in your staging area. This will open an editor for a commit message.
-git commit -m "I love documentation"    # Make a new commit with a commit message from the command line
-git commit -a                           # Make a new commit and automatically "add" changes from all known files
-git commit -am "I still do!"            # A combination of the above
-git commit --amend                      # Re-do the commit message of the previous commit (don't do this after pushing!)
-                                        #   We _never_ change "public history"
-git reset <file>                        # Unstage a staged file leaving in working directory without losing any changes.
-git reset --soft [commit_hash]          # resets the current branch to <commit>. Does not touch the staging area or the working tree at all.
-                                        # --hard mode would discard all changes.
-
-# Configuring a different editor
-## Avoid Vim but stay in terminal:
-- `git config --global core.editor nano`
-
-## For Windows:
-- Use Notepad:
-`git config --global core.editor notepad`
-
-- or for instance Notepad++:
-`git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
-
-
-# See history
-git log             # Show commit logs
-git log --oneline   # Formats commits to a single line (shorthand for --pretty=oneline  --abbrev-commit )
-git log --graph     # Show a graph commits and branches
-git log --pretty=fuller     # To see commit log details with author and committer details, if any different.
-git log --follow <file>     # List the history of a file beyond renames
-git log branch2..branch1    # Show commits reachable from branch1 but not from branch2
-
-# Deferring
-git stash                               # Stash (store temporarily) changes in working branch and enable checkingout a new branch
-git stash list                          # List stored stashes.
-git stash apply <stash>                 # Apply given <stash>, or if none given the latest from stash list.
-
-
-# Working with Branches
-git branch my-branch       # Create a new branch called my-branch
-git switch my-branch     # Switch to a different branch to work on it
-git switch -c my-branch  # Create a new branch called my-branch AND switch to it
-git branch -d my-branch    # Delete branch my-branch that has been merged with master
-git branch -D my-branch    # Forcefully delete a branch my-branch that hasn't been merged to master
-
-# Merging
-git merge master         # Merge the master branch into your currently checked out branch.
-git rebase master        # Rebase current branch on top of master branch
-
-# Working with Remotes
-git remote              # Show your current remotes
-git remote -v           # Show your current remotes and their URLs
-git push                # Publish your commits to the upstream master of your currently checked out branch
-git push -u origin my-branch  # Push newly created branch to remote repo setting up to track remote branch from origin.
-                              # No need to specify remote branch name, for e.g., when doing a 'git pull' on that branch.
-git pull                # Pull changes from the remote to your currently checked out branch
-
-# Re/moving files under version control
-git rm <path/to/the/file>                 # remove file and stage the change to be committed.
-git mv <source/file> <destination/file>   # move/rename file and stage the change to be committed.
-
-# Aliases - it's possible to make aliases of frequently used commands
-#   This is often done to make a command shorter, or to add default flags
-
-# Adding a shorthand "sw" for "switch"
-git config --global alias.sw "switch"
-# Usage:
-git sw master     # Does a "git switch master"
-
-## Logging
-git log --graph --oneline --all # Show a nice graph of the previous commits
-## Adding an alias called "lol" (log oneline..) that shows the above
-git config --global alias.lol "log --graph --oneline --all"
-## Using the alias
-git lol     # Does a "git log --graph --oneline --all"
-```
-
-## Testing
-
-There is a very small test that you can run in powershell or bash.
-It is contained in the scripts `test.sh` and `test.ps1`.
-
-### Cleanup
-
-You can remove testing artifacts, `exercise` directories, with the git clean command:
-
-```sh
-git clean -ffdX
-```
+1. [git-attributes](git-attributes/README.md) - Le fichier .gitattributes vous permet de spécifier comment git gère les fichiers, tels que les sauts de ligne dans les fichiers texte ou comment différencier un fichier binaire.
+2. [Bad-commit](bad-commit/README.md) - Utilisation de `git bisect` pour trouver un mauvais commit.
+3. [bisect](bisect/README.md) - Un autre kata utilisant `git bisect`.
+4. [pre-push](pre-push/README.md) - Un exercice rapide sur l'utilisation des crochets Git.
+5. [Investigation](investigation/README.md) - Découvrez ce qui se passe dans un référentiel Git, comprenez à quoi cela ressemble sous le capot.
+6. [Objects](objects/README.md) - Un petit exercice sur les entrailles de Git.
+7. [merge-driver](merge-driver/README.md) - Définition d'un pilote de fusion personnalisé.
+8. [rebase-exec](rebase-exec/README.md) - Exécutez des tests sur chaque commit en utilisant `git rebase --exec`.
