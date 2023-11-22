@@ -1,11 +1,12 @@
-"# Git Kata : Commit Basique
+# Git Kata : Commit Basique
+
 Cette kata vous initiera aux commandes `git add` et `git commit`.
 
 C'est une kata très introductive. Si vous avez déjà utilisé `git status`, `git log --oneline --graph`, `git add` et `git commit` de manière approfondie, vous pouvez probablement la sauter.
 
 Vous pouvez regarder le bas de ce fichier si vous n'avez pas encore effectué la configuration de base de Git.
 
-## Configuration :
+## Configuration
 
 1. Exécutez `source setup.sh` (ou `.\setup.ps1` dans PowerShell)
 
@@ -29,6 +30,7 @@ Vous pouvez regarder le bas de ce fichier si vous n'avez pas encore effectué la
 16. Ajoutez et faites un commit de la dernière modification.
 
 ## Commandes utiles
+
 - `git add`
 - `git commit`
 - `git commit -m "Mon message de commit"`
@@ -41,16 +43,20 @@ Vous pouvez regarder le bas de ce fichier si vous n'avez pas encore effectué la
 - `echo contenu >> fichier` pour ajouter du contenu au fichier (ou `ac nomdufichier 'contenu'` dans PowerShell)
 
 ## Configuration Initiale de Git
+
 1. `git config --global user.name "John Doe"`
 2. `git config --global user.email "johndoe@example.com"`
 
 Pour les amateurs de vim :
+
 - `git config --global core.editor nano`
 
 Pour les utilisateurs de Windows :
+
 - `git config --global core.editor notepad`
 
 Autres options d'éditeur :
+
 - `git config --global core.editor "atom --wait"`
 - `git config --global core.editor "code --wait"`
 - `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst`"
